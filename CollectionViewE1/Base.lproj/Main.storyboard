@@ -44,7 +44,18 @@
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QDr-8W-DSk">
-                                                                        <rect key="frame" x="8" y="8" width="104" height="21"/>
+                                                                        <rect key="frame" x="8" y="1" width="104" height="21"/>
+                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="zl6-uc-Z7N">
+                                                                        <rect key="frame" x="18" y="22" width="80" height="80"/>
+                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fuB-x5-MtJ">
+                                                                        <rect key="frame" x="8" y="99" width="104" height="21"/>
                                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -53,6 +64,11 @@
                                                                 </subviews>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                             </view>
+                                                            <connections>
+                                                                <outlet property="imageViewProduct" destination="zl6-uc-Z7N" id="Nxd-TP-qjL"/>
+                                                                <outlet property="lblName" destination="QDr-8W-DSk" id="PZJ-Bj-Tb2"/>
+                                                                <outlet property="lblPrice" destination="fuB-x5-MtJ" id="zrc-me-HOe"/>
+                                                            </connections>
                                                         </collectionViewCell>
                                                     </cells>
                                                     <connections>
@@ -62,6 +78,9 @@
                                                 </collectionView>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="mainCollectView" destination="rHP-Fi-FWH" id="AtH-kg-pPD"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
